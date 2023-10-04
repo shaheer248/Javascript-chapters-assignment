@@ -1,0 +1,169 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <style>
+        .title {
+  position: absolute;
+}
+
+.title a {
+  text-decoration: none;
+  color: black;
+}
+
+.title a:hover {
+  color: blue;
+}
+
+.container {
+  background-color: #454545;
+  display:flex;
+  flex-direction: column;
+  margin-top: 180px;
+  margin-bottom: 100px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3em;
+  text-align: center;
+  width: max-content;
+}
+
+.button {
+  font-family: 'Jura', sans-serif;
+  font-size: 25px;
+  width: 55px;
+  height: 55px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.clrbutton {
+  font-family: 'Jura', sans-serif;
+  font-size: 25px;
+  width: 55px;
+  height: 55px;
+  margin: 0px;
+  padding: 0px;
+  background-color: red;
+}
+
+.addbutton {
+  font-family: 'Jura', sans-serif;
+  font-size: 25px;
+  width: 55px;
+  height: 55px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #66c0c2;
+}
+
+.zerobutton {
+  font-family: 'Jura', sans-serif;
+  font-size: 25px;
+  width: 55px;
+  height: 55px;
+  margin: 0px;
+  padding: 0px;
+}
+
+td, tr{
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+#display {
+  background-color: #66c0c2;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  direction: rtl;
+  width: 200px;
+  overflow: hidden;
+  height: 55px;
+  font-size: 30px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  background-color: #f1f7b2;
+  color: black;
+  text-align: center;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+    </style>
+</head>
+<body>
+    <center><h1>QUESTION 1</h1></center>
+    <center>
+        <input type="button" value="See the time" onclick="timeidea()">
+        <h2 id="time"></h2>
+    </center>
+    <center><h1>QUESTION 2</h1></center>
+    <center>
+        <input type="text" placeholder="Your First Name" id="nameinput">
+        <input type="text" placeholder="Your Last Name" id="nameoutput">
+        <input type="button" value="See your full name" onclick="names()">
+        <h2 id="name"></h2>
+    </center>
+    <center><h1>QUESTION 3</h1></center>
+    <center>
+        <input type="text" placeholder="First Value..." id="numinput">
+        <input type="text" placeholder="Last Value..." id="numoutput">
+        <input type="button" value="See the added value" onclick="nums()">
+        <h2 id="num"></h2>
+        </center>
+        <center><h1>QUESTION 4 (CALCULATOR)</h1></center>
+        <center>
+          <table border="1" cellpadding="5" cellspacing="5" width="600">
+            <tr align="center">
+            <td>First number</td>
+            <td>Second Number</td>
+            <td>Result</td>
+            </tr>
+            <tr align="center">
+            <td><input name="number1" type="text" size=10 id='num1'/></td>
+            <td><input name="number2" type="text" size=10 id='num2'/></td>
+            <td> <input type="text" id='result' readonly ></td>
+            </tr>
+            <tr>
+            <td colspan="3">
+            <button onclick="showresult('1')">+</button>
+            <button onclick="showresult('2')">-</button>
+            <button onclick="showresult('3')">*</button>
+            <button onclick="showresult('4')">/</button>
+            <button onclick="showresult('5')">%</button>
+            </td>
+            </tr>
+            
+            </table>
+        </center>
+        <center><h3>Sir, maf krdein. Bohot busy routine chl rha hai</h3></center>
+    </body>
+    </html>

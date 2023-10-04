@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <center><h1>QUESTION 1</h1></center>
+    <center>
+    <input type="button" onclick="browserdatetime()" value="Show Date And Time">
+    <h2 id="datetime"></h2>
+    </center>
+    <center><h1>QUESTION 2</h1></center>
+    <center>
+    <input type="button" onclick="monthname()" value="Show Current Month With Name">
+    <h2 id="namemonth"></h2>
+    </center>
+    <center><h1>QUESTION 3</h1></center>
+    <center>
+    <input type="button" onclick="sat()" value="Show Current Day Name With 3 Letters">
+    <h2 id="sattxt"></h2>
+    </center>
+    <center><h1>QUESTION 4</h1></center>
+    <center>
+    <input type="button" onclick="funday()" value="Show Message if it's Holiday">
+    <h2 id="funtxt"></h2>
+    </center>
+    <center><h1>QUESTION 5</h1></center>
+    <center>
+    <input type="button" onclick="firstdays()" value="Show a Message">
+    <h2 id="firstdayz"></h2>
+    </center>
+    <center><h1>QUESTION 6</h1></center>
+    <center>
+    <input type="button" onclick="minutessince()" value="Minutes since January 1,1970">
+    </center>
+    <center><h1>QUESTION 7</h1></center>
+    <center>
+        <input type="button" value="Refresh" onclick='window.location = window.location.href' hidden />
+        <h2 id="lblTime" hidden></h2>
+         <input type="button" onclick="DisplayCurrentTime()" value="Tells you if it's AM or PM">
+        <h2 id="DisplayCurrentTime"></h2>
+    </center>
+    <center><h1>QUESTION 9</h1></center>
+    <center>
+        <input type="button" onclick="RamadanTime()" value="Tells you days passed since 1st Ramadan, 2015">
+        <h2 id="RamadanTime"></h2>
+    </center>
+    <center><h1>QUESTION 10</h1></center>
+    <center>
+        <input type="button" onclick="reference()" value="Tells you the seconds that elapsed between the reference date and the beginning of 2015">
+        <h2 id="reference"></h2>
+    </center>
+    <center><h1>QUESTION 11</h1></center>
+    <center>
+        <input type="button" onclick="hourago()" value="Tells you the time one hour ago">
+        <h2 id="hourago"></h2>
+    </center>
+    <center><h1>QUESTION 12</h1></center>
+    <center>
+        <input type="button" onclick="daysago()" value="Tells you the time 100 years ago ">
+        <h2 id="daysago"></h2>
+    </center>
+    <center><h1>QUESTION 13</h1></center>
+    <center>
+        <form>
+        <center>
+                <input type="number" name="picknumber" value="3" style="display: none;" hidden>
+          
+            <input type="number" name="year" placeholder="Enter Your Birth Year:">
+          
+            <input type="number" name="number" value="1767" hidden>
+          
+          <input type="button" value="Calculate" onclick="calc(this.form)">
+            <label>Answer:</label>
+            <input type="number" name="answer" placeholder="Your age">
+        </center>
+        <center><h1>QUESTION 14</h1></center>
+        <center><input type="button" onclick="kbill()" value="See your bill and print!"></center>
+        <div id="kbill" hidden>
+            <h1>K-Electric Bill</h1>
+            <h2>Customer Name: <strong>Shaheer Khan</strong></h2>
+            <h2>Month: <strong>July</strong></h2>
+            <h2>Number Of Units: <strong>610</strong></h2>
+            <h2>Charges Per Unit: <strong>26</strong></h2><br>
+            <h2>Fuel Adjucement Charges: <strong>Rs. 140</strong></h2>
+            <h2>Taxes: <strong>Rs. 1,860</strong></h2>
+            <h2>Net Amount Payable (within Due Date): <strong>Rs. 17,860</strong></h2>
+            <h2>Late Payment Surcharge: <strong>Rs. 400</strong></h2>
+            <h2>Gross Amount Payable (after Due Date): <strong>Rs. 18,260</strong></h2>
+        </div>
+</body>
+</html>

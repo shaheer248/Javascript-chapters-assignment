@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <center><h1>QUESTION 1 & 2</h1></center>
+    <center>
+        <a href="https://www.youtube.com/" onclick="linkalert()" target="_blank"><button>Go To YouTube</button></a>
+</center>
+<center><h1>QUESTION 3</h1></center>
+    <center>
+        <table style="width:10%">
+            <tr>
+              <th>Index</th>
+              <th>Name</th>
+              <th>Class</th>
+            </tr>
+            <tr id="first">
+              <td>0</td>
+              <td>Jhone</td>
+              <td>10</td>
+              <td><button onclick="tablefirst()">Delete</button></td>
+            </tr>
+            <tr id="sec">
+              <td>1</td>
+              <td>Doe</td>
+              <td>9</td>
+              <td><button onclick="tablesec()">Delete</button></td>
+            </tr>
+            <tr id="third">
+                <td>2</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="tablethird()">Delete</button></td>
+              </tr>
+              <tr id="fourth">
+                <td>3</td>
+                <td>James</td>
+                <td>8</td>
+                <td><button onclick="tablefour()">Delete</button></td>
+              </tr>
+              <tr>
+                <td><button onclick="reset()">Reset</button></td>
+                <td></td>
+                <td></td>
+              </tr>
+          </table>
+</center>
+<center><h1>QUESTION 4</h1></center>
+<center><img src="img1.jpg" onmouseover="rollover(this)" onmouseout="mouseaway(this)" /></center>
+<center><h1>QUESTION 5</h1></center>
+<center>
+  <input type="button" onclick="counter()" value="Increase Clicks!">
+  <input type="button" onclick="ncounter()" value="Decrease Clicks!">
+</center>
+<center><p>Clicks: <a id="clicks">0</a></p></center>
+
+</body>
+</html>

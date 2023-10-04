@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="app.js"></script>
+</head>
+
+<body style="text-align: center;">
+<h1>QUESTION 1</h1>
+<p><input type="text" id="txtNumber" placeholder="Enter number"/></p>
+<p><input type="button" value="Print Table." onclick='printTable()'/>
+<!--print numbers-->
+<p id="pPrint"></p>
+<label>Refresh the page after you want to enter another number</label>
+<h1>QUESTION 2</h1>
+<p><input id="c" onkeyup="convert('C')"> degrees Celsius</p>
+<p><input id="f" onkeyup="convert('F')"> degrees Fahrenheit</p> 
+<p>Note that the <b>Math.round()</b> method is used, so that the result will be returned as an integer.</p>
+<h1>QUESTION 3</h1>
+<Input type="text" placeholder="Marks Total" id="total">
+<Input type="text" placeholder="Marks Obtained" id="obtained">
+<input type="button" value="Calc Percentage." onclick='percentage()'/>
+<Input type="text" placeholder="Total Percentage" id="tp" readonly>
+<h1>QUESTION 4</h1>
+<Input type="text" placeholder="In PAK Rupees" id="pakrupees" readonly>
+<input type="button" value="Calc Currency." onclick='currency()'/>
+<h1>QUESTION 5</h1>
+<Input type="text" placeholder="Your Answer" id="arithmeticans" readonly>
+<input type="button" value="Calculate." onclick='singleline()'/>
+<h1>QUESTION 6</h1>
+<Input type="text" placeholder="Your Birth Year" id="birthage">
+<Input type="text" placeholder="Current Year" id="current">
+<input type="button" value="Calculate." onclick='agecalc()'/>
+<Input type="text" placeholder="Your Age" id="urage" readonly>
+<h1>QUESTION 7</h1>
+<Input type="text" placeholder="My Fav Snack" id="birthage" value="Party Pack Classic Lays">
+<Input type="text" placeholder="My Current Age" id="currentage" value="">
+<Input type="text" placeholder="Estimated Age" id="estimated" value="">
+<Input type="text" placeholder="Amount Per Day" id="amountperday" value="">
+<input type="button" value="Calculate." onclick='snacks()'/>
+<Input type="text" placeholder="Your Answer" id="eatdaily" readonly>
+</body>
+</html>
